@@ -25,6 +25,15 @@
     "@fastify/cors": "^9.0.1",
     "@prisma/client": "^5.9.1",
     "fastify": "^4.26.0",
+    "husky": "^9.0.11",
     "tsx": "^4.7.0"
+  },
+  "husky": {
+    "hooks": {
+      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
+      "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
+      "post-applypatch": "echo \"[Husky] post-applypatch\"",
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
   }
 }
