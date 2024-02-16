@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "test": "react-scripts test --passWithNoTests",
     "lint": "prettier --check .",
-    "format": "prettier --write .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "format": "prettier --write 'src/**/*.{ts,tsx}'"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "prisma": "^5.9.1",
+    "react-scripts": "^5.0.1",
     "typescript": "^5.3.3"
   },
   "dependencies": {
@@ -36,7 +38,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "prettier --write . && git add -A ."
+      "pre-commit": "yarn run format"
     }
   }
 }
