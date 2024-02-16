@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "lint": "prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   "dependencies": {
     "@fastify/cors": "^9.0.1",
     "@prisma/client": "^5.9.1",
+    "D": "^1.0.0",
     "fastify": "^4.26.0",
     "tsx": "^4.7.0"
   },

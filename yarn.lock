@@ -201,6 +201,11 @@
   dependencies:
     undici-types "~5.26.4"
 
+D@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/D/-/D-1.0.0.tgz#c348a4e034f72847be51206fc530fc089e9cc2a9"
+  integrity sha512-nQvrCBu7K2pSSEtIM0EEF03FVjcczCXInMt3moLNFbjlWx6bZrX72uT6/1uAXDbnzGUAx9gTyDiQ+vrFi663oA==
+
 abort-controller@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/abort-controller/-/abort-controller-3.0.0.tgz"
@@ -251,6 +256,13 @@ archy@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/archy/-/archy-1.0.0.tgz"
   integrity sha512-Xg+9RwCg/0p32teKdGMPTPnVXKD0w3DfHnFTficozsAgsvq2XenPJq/MYpzzQ/v8zrOyJn6Ds39VA4JIDwFfqw==
+
+async-stream-flow@~1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/async-stream-flow/-/async-stream-flow-1.0.2.tgz#42db63525c5d116267ea68b0369d9b35caa384db"
+  integrity sha512-Iy1ynz7dKRhlvypxRm3zLbPDJsYaeKOQRfxRhZEM3ZZCNq3N0jR/T6KRUJxWVf9AHi5ynj/Wp4L7gATeLGSW9g==
+  dependencies:
+    through3 "~1.1.5"
 
 atomic-sleep@^1.0.0:
   version "1.0.0"
@@ -502,6 +514,14 @@ forwarded@0.2.0:
   resolved "https://registry.npmjs.org/forwarded/-/forwarded-0.2.0.tgz"
   integrity sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==
 
+fs-flow@~1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/fs-flow/-/fs-flow-1.0.2.tgz#6b7133d1435a4a94f3dca624d086df2936a533e7"
+  integrity sha512-AUYZEh7fNmZFHm8w2S4rs0oaJg0l/a8AXLAAFqu/ulmpbPoIxkovrfw/j9GcAYxIc3Oj7eRIibTX82s5+nCtag==
+  dependencies:
+    async-stream-flow "~1.0.1"
+    through3 "~1.1.5"
+
 fsevents@~2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
@@ -528,6 +548,60 @@ human-signals@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/human-signals/-/human-signals-5.0.0.tgz"
   integrity sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==
+
+husk-async@~1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/husk-async/-/husk-async-1.0.3.tgz#b5a5cae27b3e2641126de07b246ae2a6477fa382"
+  integrity sha512-VW6/vJKdnhbybdeh4e0ITZ1azI50xmTUrfBSuZhOcTxTOyinJLt1/RsegJXmK+c92MzcOr9WsOJpSt6EZW11xg==
+  dependencies:
+    async-stream-flow "~1.0.1"
+
+husk-core@~1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/husk-core/-/husk-core-1.0.4.tgz#870b2619c0283d6a1262b98a9a4b76612292e47d"
+  integrity sha512-duZv9ZJFlUt44vwEGLW1HvnzL9kS6AQklydtOYRJ4BT9O9aZ1Aixtt0sBv7b2dTicchYMpSkdJJNVpC8BKT0cA==
+  dependencies:
+    husk-print "~1.0.2"
+    husk-through "~1.0.2"
+
+husk-exec@~1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/husk-exec/-/husk-exec-1.0.4.tgz#f81eaffd1580b91da3a13c07ce568fc8a72ce9b4"
+  integrity sha512-eHZH+pYbDGFZXxvvvUhi0Jj8QA4963XpjuYk11ytK/oF2LcLGp9dzng7OUytHa9Y+EucdfGl+7js9Klurwntyw==
+  dependencies:
+    process-flow "~1.0.2"
+
+husk-fs@~1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/husk-fs/-/husk-fs-1.0.3.tgz#3c32a96e561753d631b1a8ee5c4a236d1d89e138"
+  integrity sha512-OizyOaE/FlV/11SOWUOvgBmIvZD3/bGghKQafzNtq4I6VePWZ2kH3q1zuck1cLfhOcYztdVdZaOaRC+rFHOcBg==
+  dependencies:
+    fs-flow "~1.0.1"
+
+husk-print@~1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/husk-print/-/husk-print-1.0.3.tgz#3dd134b46bc701ccbe8113c8d6cbeb8305656697"
+  integrity sha512-paJ8IGpFoS9vKdWHS4tqtiwoF6dX48Il4z1/yP+9ulEwm6RTpC42mkKAj6MtD+CIYAxCLAwYvkTwMqh1Vg/KWg==
+  dependencies:
+    print-flow "~1.0.2"
+
+husk-through@~1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/husk-through/-/husk-through-1.0.2.tgz#f7d668be267e1deeb8e285a8687bef391695cabc"
+  integrity sha512-hm0xz/MkfZDxHm0PFm07sb+FuHTHCtPHeXNcBtf0Kl/vKx2hQoliYU1NC5JVjO+fe79z4uCBfI9/l3rFctIFwg==
+  dependencies:
+    through-flow "~1.0.1"
+
+husk@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/husk/-/husk-0.5.3.tgz#8693aa0b164ccb6314dc7cd3478de4f796691458"
+  integrity sha512-4rLByTytY2LtiuyiRQ20C4AmSZ0+/imh1557r92TFcgAgeTgcsVwHlGLi2nO4QNiEKhvhlPj9HuCjKWfwNtwYA==
+  dependencies:
+    husk-async "~1.0.2"
+    husk-core "~1.0.4"
+    husk-exec "~1.0.4"
+    husk-fs "~1.0.2"
+    zephyr "~1.2.6"
 
 husky@^9.0.11:
   version "9.0.11"
@@ -764,12 +838,26 @@ prettier@^3.2.5:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.2.5.tgz#e52bc3090586e824964a8813b09aba6233b28368"
   integrity sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==
 
+print-flow@~1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/print-flow/-/print-flow-1.0.2.tgz#28753a4e6aea5122397bb5bc85b67f50548b9c67"
+  integrity sha512-yg5dgWP8pvtV0vWEQNXP47Nwnmt+3gOJg0EgH6mXfrUUlz/fVX7Xkif5gGMiSDMq3QGwswE3RoTlgzSMpRLs1g==
+  dependencies:
+    through3 "~1.1.5"
+
 prisma@^5.9.1:
   version "5.9.1"
   resolved "https://registry.npmjs.org/prisma/-/prisma-5.9.1.tgz"
   integrity sha512-Hy/8KJZz0ELtkw4FnG9MS9rNWlXcJhf98Z2QMqi0QiVMoS8PzsBkpla0/Y5hTlob8F3HeECYphBjqmBxrluUrQ==
   dependencies:
     "@prisma/engines" "5.9.1"
+
+process-flow@~1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/process-flow/-/process-flow-1.0.2.tgz#ed024b2cdf7004193d46103650ca9393067e7ec0"
+  integrity sha512-MJGNN728wtacWIPgp+bsUKwtNX9aKOw2HZVD+jrnZkTMCf4jrhvZnZnEaz6NUHKEy7rEFmz6sVDmz7O2k06xvQ==
+  dependencies:
+    through3 "~1.1.5"
 
 process-warning@^2.0.0:
   version "2.3.2"
@@ -977,6 +1065,18 @@ thread-stream@^2.0.0:
   dependencies:
     real-require "^0.2.0"
 
+through-flow@~1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/through-flow/-/through-flow-1.0.2.tgz#3e47b310257762e3e9e0f97137432fbe7893bc0c"
+  integrity sha512-j6IAxjqlbQAdQ45aQ2qw/TLdOsh3mzsaOtnMnw2ceW6N+zowlQZX3EXLhnqoa6Sz+NUdZdxzAEQhLTXSXHVoNw==
+  dependencies:
+    through3 "~1.1.5"
+
+through3@~1.1.5:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/through3/-/through3-1.1.7.tgz#d68c3bd034556e715c379dad257b08215e27364c"
+  integrity sha512-9bUZXDGridMzC3uqRKw+ilb4n4S0Fo6AQNi9wM9zBYHJpQVsfI4JaroFSACXmDKViL+upDI3+V/io3UwlCTmtA==
+
 to-regex-range@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz"
@@ -1046,3 +1146,8 @@ yaml@2.3.4:
   version "2.3.4"
   resolved "https://registry.npmjs.org/yaml/-/yaml-2.3.4.tgz"
   integrity sha512-8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==
+
+zephyr@~1.2.6:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/zephyr/-/zephyr-1.2.8.tgz#af734a97dbbd368e2b73597c7e6054dbcbd69a6c"
+  integrity sha512-Evw01lEec5dp3gUlyKrCSRlZpcO2FpRq+SgpA1Ha9YgGKY2kFkGh6S3nVgzCagN9HtD//vmET/fQzojiK+NYog==
