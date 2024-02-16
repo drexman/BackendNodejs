@@ -1,1 +1,2 @@
 echo pre-commit
+yarn run format
