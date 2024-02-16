@@ -36,10 +36,6 @@
     "D": "^1.0.0",
     "fastify": "^4.26.0",
     "tsx": "^4.7.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo pre-commit"
-    }
   }
+
 }
