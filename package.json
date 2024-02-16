@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "test": "echo remopve test",
+    "test": "echo remove test",
     "testReal": "react-scripts test --passWithNoTests",
     "lint": "prettier --check .",
     "prepare": "husky",
@@ -39,7 +39,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn run format "
+      "pre-commit": "echo pre-commit"
     }
   }
 }
