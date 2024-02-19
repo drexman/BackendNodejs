@@ -4,21 +4,26 @@ import {
   FastifyRequest,
   FastifyReply,
 } from "fastify";
-import { CreateCustomerController } from "./controllers/CreateCustomerController";
-export async function routes(
+import { UserController } from "./controllers/UserController";
+import { AuthController } from "./controllers/AuthController";
+export const publicRoutes = async ( 
   fastify: FastifyInstance,
-  options: FastifyPluginOptions,
-) {
-  fastify.get(
-    "/teste",
+  options: FastifyPluginOptions) => 
+ {
+  fastify.post(
+    "/login",
     async (request: FastifyRequest, reply: FastifyReply) => {
-      return { ok: true };
+      return new AuthController().login(request, reply)
     },
   ),
     fastify.post(
-      "/customer",
+      "/user",
       async (request: FastifyRequest, reply: FastifyReply) => {
-        return new CreateCustomerController().handle(request, reply);
+        return new UserController().newCustomer(request, reply);
       },
     );
+}
+
+export const privateRoutes = async() => {
+
 }

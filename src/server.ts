@@ -1,12 +1,16 @@
 import Fastify from "fastify";
-import cors from "@fastify/cors";
-import { routes } from "./routes";
+import { PORT } from './auth/secrets'
+import { publicRoutes, privateRoutes } from "./routes";
 const app = Fastify({ logger: true });
 
+
+
 const start = async () => {
-  await app.register(routes);
+  await app.register(publicRoutes);
+  await app.register(privateRoutes);
+
   try {
-    await app.listen({ port: 3333 });
+    await app.listen({ port: PORT });
   } catch (err) {
     process.exit(1);
   }
