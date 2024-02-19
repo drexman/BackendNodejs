@@ -1,4 +1,4 @@
-import {
+import fastify, {
   FastifyInstance,
   FastifyPluginOptions,
   FastifyRequest,
@@ -24,4 +24,12 @@ export const publicRoutes = async (
     );
 };
 
-export const privateRoutes = async () => {};
+export const privateRoutes = async (
+  fastify: FastifyInstance,
+  options: FastifyPluginOptions,
+) => {
+  fastify.get(
+    "/profile",
+    async (request: FastifyRequest, reply: FastifyReply) => {},
+  );
+};
