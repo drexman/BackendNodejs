@@ -1,9 +1,7 @@
 import Fastify from "fastify";
-import { PORT } from './auth/secrets'
+import { PORT } from "./auth/secrets";
 import { publicRoutes, privateRoutes } from "./routes";
 const app = Fastify({ logger: true });
-
-
 
 const start = async () => {
   await app.register(publicRoutes);
