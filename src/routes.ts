@@ -6,7 +6,7 @@ import fastify, {
 } from "fastify";
 import { UserController } from "./controllers/UserController";
 import { AuthController } from "./controllers/AuthController";
-import { verifiyToken } from "./middlewares/auth.middlewares"
+import { verifiyToken } from "./middlewares/auth.middlewares";
 
 export const publicRoutes = async (
   fastify: FastifyInstance,
@@ -33,10 +33,10 @@ export const privateRoutes = async (
   fastify.get(
     "/profile",
     {
-      preHandler : verifiyToken
+      preHandler: verifiyToken,
     },
     async (request: FastifyRequest, reply: FastifyReply) => {
-      return {'done' : 'sucessol'}
+      return { done: "sucessol" };
     },
   );
 };

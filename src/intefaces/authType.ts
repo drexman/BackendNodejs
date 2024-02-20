@@ -1,5 +1,4 @@
 export interface AuthProps {
-    id: string,
-    email: string;
+  id: string;
+  email: string;
 }
-  

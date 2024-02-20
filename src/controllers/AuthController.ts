@@ -34,7 +34,6 @@ class AuthController {
     );
     return { id: user.id, email: user.email, token };
   }
-
 }
 
 export { AuthController };
