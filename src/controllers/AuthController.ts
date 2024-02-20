@@ -1,7 +1,7 @@
 import { FastifyRequest, FastifyReply } from "fastify";
 import { UserService } from "../services/UserService";
 import * as bcrypt from "bcrypt";
-import { sign } from "jsonwebtoken";
+import { sign, verify } from "jsonwebtoken";
 import { JWT_SECRET } from "../auth/secrets";
 
 class AuthController {
@@ -34,6 +34,7 @@ class AuthController {
     );
     return { id: user.id, email: user.email, token };
   }
+
 }
 
 export { AuthController };

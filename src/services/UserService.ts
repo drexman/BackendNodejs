@@ -1,6 +1,6 @@
 import prismaClient from "../prisma";
 
-import { CreateCustomerProps, PropsEmail } from "../intefaces/customerType";
+import { CreateUserProps, PropsEmail } from "../intefaces/userType";
 
 class UserService {
   async findByEmail({ email }: PropsEmail) {
@@ -8,7 +8,7 @@ class UserService {
     return customer;
   }
 
-  async addNewCustomer({ name, email, password }: CreateCustomerProps) {
+  async addNewCustomer({ name, email, password }: CreateUserProps) {
     const customer = await prismaClient.user.create({
       data: {
         name,
